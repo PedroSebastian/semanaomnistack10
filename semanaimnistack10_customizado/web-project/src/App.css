@@ -1,0 +1,42 @@
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 110px 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#app main {
+    margin-left: 30px;
+}
+
+@media (max-width: 1000px) {
+    #app {
+        flex-direction: column;
+    }
+
+    #app main {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    #app aside {
+        width: 100%;
+    }
+}
+
+.app-header {
+    width: 100vw;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: rgb(10,95,56);
+    background: linear-gradient(90deg, rgba(10,95,56,1) 0%, rgba(12,49,32,1) 100%);
+    padding: 5px 50px 5px 50px;
+}
